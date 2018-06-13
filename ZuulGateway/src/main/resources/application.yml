@@ -1,0 +1,6 @@
+zuul:
+  routes:
+    employee:
+      url: http://localhost:8091
+server:
+  port: 8092
