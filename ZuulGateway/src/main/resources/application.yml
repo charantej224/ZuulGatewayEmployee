@@ -1,6 +1,18 @@
 zuul:
   routes:
     employee:
-      url: http://localhost:8091
+      url: http://localhost:8092
+    department:
+      url: http://localhost:8093
 server:
-  port: 8092
+  port: 8091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8020/eureka
+spring:
+  application:
+    name: ZuulGatewayService
+    
+    
+   
