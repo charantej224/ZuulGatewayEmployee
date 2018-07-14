@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableZuulProxy
-@EnableEurekaClient
+//@EnableEurekaClient
 @ComponentScan("com.charan.*")
 public class ZuulGatewayApplication {
 
