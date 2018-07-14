@@ -1,15 +1,21 @@
 zuul:
   routes:
     employee:
-      url: http://localhost:8092
+      path: /employee/**
+      serviceId: EMPLOYEESERVICE
     department:
-      url: http://localhost:8093
+      path: /department/**
+      erviceId: DEPARTMENTSERVICE
 server:
   port: 8091
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8020/eureka
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetchRegistry: true
+  instance:
+    prefer-ip-address: false
 spring:
   application:
     name: ZuulGatewayService
