@@ -5,13 +5,13 @@ zuul:
       serviceId: EMPLOYEESERVICE
     department:
       path: /department/**
-      erviceId: DEPARTMENTSERVICE
+      serviceId: DEPARTMENTSERVICE
 server:
   port: 8091
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8020/eureka
     register-with-eureka: true
     fetchRegistry: true
   instance:
